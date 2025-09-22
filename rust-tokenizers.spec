@@ -16,6 +16,8 @@ Source:         %{crates_source}
 # * Downgrade onig dependency from 6.5.1 to 6.4.0
 # * Drop criterion dev-dependency
 Patch:          tokenizers-fix-metadata.diff
+# https://github.com/huggingface/tokenizers/pull/1867
+Patch2:         tokenizers-bump-indicatif.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 

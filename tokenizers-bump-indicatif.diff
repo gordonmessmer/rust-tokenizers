@@ -1,0 +1,24 @@
+diff -ru tokenizers-0.21.4.orig/Cargo.toml tokenizers-0.21.4/Cargo.toml
+--- tokenizers-0.21.4.orig/Cargo.toml	1970-01-01 00:00:01.000000000 +0000
++++ tokenizers-0.21.4/Cargo.toml	2025-09-22 17:15:49.164550254 +0000
+@@ -171,7 +171,7 @@
+ default-features = false
+ 
+ [dependencies.indicatif]
+-version = "0.17"
++version = "0.18"
+ optional = true
+ 
+ [dependencies.itertools]
+diff -ru tokenizers-0.21.4.orig/Cargo.toml.orig tokenizers-0.21.4/Cargo.toml.orig
+--- tokenizers-0.21.4.orig/Cargo.toml.orig	2006-07-24 01:21:28.000000000 +0000
++++ tokenizers-0.21.4/Cargo.toml.orig	2025-09-22 17:15:33.461781499 +0000
+@@ -52,7 +52,7 @@
+ unicode-normalization-alignments = "0.1"
+ unicode_categories = "0.1"
+ unicode-segmentation = "1.11"
+-indicatif = {version = "0.17", optional = true}
++indicatif = {version = "0.18", optional = true}
+ itertools = "0.14"
+ log = "0.4"
+ derive_builder = "0.20"
