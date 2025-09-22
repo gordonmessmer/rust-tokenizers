@@ -5,6 +5,15 @@ cargo-toml-patch-comments = [
     "Drop criterion dev-dependency",
 ]
 
+[features]
+hide = [
+    "fancy-regex",
+    "hf-hub",
+    "http",
+    "unstable_wasm",
+    "rustls-tls",
+]
+
 [tests]
 run = [
     "doc",

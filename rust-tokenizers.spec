@@ -5,7 +5,7 @@
 %global crate tokenizers
 
 Name:           rust-tokenizers
-Version:        0.21.4
+Version:        0.22.1
 Release:        %autorelease
 Summary:        Implementation of today's most used tokenizers in Rust
 
@@ -64,42 +64,6 @@ use the "esaxx_fast" feature of the "%{crate}" crate.
 %files       -n %{name}+esaxx_fast-devel
 %ghost %{crate_instdir}/Cargo.toml
 
-%package     -n %{name}+fancy-regex-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+fancy-regex-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "fancy-regex" feature of the "%{crate}" crate.
-
-%files       -n %{name}+fancy-regex-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+hf-hub-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+hf-hub-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "hf-hub" feature of the "%{crate}" crate.
-
-%files       -n %{name}+hf-hub-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+http-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+http-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "http" feature of the "%{crate}" crate.
-
-%files       -n %{name}+http-devel
-%ghost %{crate_instdir}/Cargo.toml
-
 %package     -n %{name}+indicatif-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -134,30 +98,6 @@ This package contains library source intended for building other packages which
 use the "progressbar" feature of the "%{crate}" crate.
 
 %files       -n %{name}+progressbar-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+rustls-tls-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+rustls-tls-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "rustls-tls" feature of the "%{crate}" crate.
-
-%files       -n %{name}+rustls-tls-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+unstable_wasm-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+unstable_wasm-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "unstable_wasm" feature of the "%{crate}" crate.
-
-%files       -n %{name}+unstable_wasm-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %prep
